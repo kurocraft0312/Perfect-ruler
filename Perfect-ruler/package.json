@@ -1,0 +1,33 @@
+{
+  "name": "perfect-ruler",
+  "version": "1.0.0",
+  "description": "Article template for bloggers, affiliates and writers.",
+  "author": "kurocraft0312",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kurocraft0312/Perfect-ruler/issues"
+  },
+  "homepage": "https://github.com/kurocraft0312/Perfect-ruler#readme",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kurocraft0312/Perfect-ruler.git"
+  },
+  "keywords": [
+    "文章テンプレート",
+    "ライター",
+    "ライティング"
+  ],
+  "dependencies": {
+    "nuxt": "^2.0.0",
+    "element-ui": "^2.4.11"
+  },
+  "devDependencies": {}
+}
