@@ -5,10 +5,14 @@
       <h1 class="toolname">Perfect-ruler</h1>
     </el-header>
     <el-main>
-      <div v-for="question in questions" :key="question.key">
-        <label for="question-content">{{ question.title }}</label>
+      <section v-for="question in questions" :key="question.key">
+        <div class="q-title">
+          <label for="question-content">{{ question.title }}</label>
+        </div>
+        <div>
           <el-input type="textarea" :rows="10" v-model="textarea"></el-input>
-      </div>
+        </div>
+      </section>
       <div class="create">
         <input type="button" value="文章を生成">
       </div>
@@ -32,34 +36,16 @@ export default {
     return {
       questions: [
         {
-          title: '質問項目1'
+          title: 'Q1.いつやってほしい/やるべきことか？'
         },
         {
-          title: '質問項目2'
+          title: 'Q2.誰がやりたい/やるべきことか？'
         },
         {
-          title: '質問項目3'
+          title: 'Q3.なぜ/何のためにやるのか？'
         },
         {
-          title: '質問項目4'
-        },
-        {
-          title: '質問項目5'
-        },
-        {
-          title: '質問項目6'
-        },
-        {
-          title: '質問項目7'
-        },
-        {
-          title: '質問項目8'
-        },
-        {
-          title: '質問項目9'
-        },
-        {
-          title: '質問項目10'
+          title: 'Q4.Q3をやるとどうなる/どう変わるのか？'
         },
       ],
       textarea: '',
@@ -71,6 +57,10 @@ export default {
 <style>
   .toolname {
     text-align: center;
+  }
+  .q-title {
+    font-weight: bold;
+    margin: 16px 0;
   }
   .create {
     margin: 24px 0;
