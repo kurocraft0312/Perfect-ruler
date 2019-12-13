@@ -1,72 +1,63 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        Perfect-ruler
-      </h1>
-      <h2 class="subtitle">
-        Article template for bloggers, affiliates and writers.
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+<!-- 最初にページを構成して、コンポーネント分けする -->
+  <el-container>
+    <el-header>
+      <h1>Perfect-ruler</h1>
+    </el-header>
+    <el-main>
+      <div v-for="question in questions" :key="question.key">
+        <label for="question-content">{{ question.title }}</label>
+          <el-input type="textarea" :rows="10" placeholder="" v-model="textarea"></el-input>
       </div>
-    </div>
-  </div>
+    </el-main>
+    <el-footer>
+      <div class="copyright"> © 2019 Ratpost by Kurokawa Shun</div>
+    </el-footer>
+  </el-container>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  components: {
-    Logo
+  data() {
+    return {
+      questions: [
+        {
+          title: '質問項目1'
+        },
+        {
+          title: '質問項目2'
+        },
+        {
+          title: '質問項目3'
+        },
+        {
+          title: '質問項目4'
+        },
+        {
+          title: '質問項目5'
+        },
+        {
+          title: '質問項目6'
+        },
+        {
+          title: '質問項目7'
+        },
+        {
+          title: '質問項目8'
+        },
+        {
+          title: '質問項目9'
+        },
+        {
+          title: '質問項目10'
+        },
+      ],
+      textarea: '',
+    }
   }
 }
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
