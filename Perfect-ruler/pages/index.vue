@@ -12,6 +12,13 @@
       <div class="create">
         <input type="button" value="文章を生成">
       </div>
+      <div>
+        <!-- 自動出力用のテキストエリア -->
+        <el-input type="textarea" :rows="30" v-model="textarea"></el-input>
+      </div>
+      <div class="copy">
+        <input type="button" value="コピーする">
+      </div>
     </el-main>
     <el-footer>
       <div class="copyright"> © 2019 Perfect-ruler by Kurokawa Shun</div>
@@ -66,6 +73,10 @@ export default {
     text-align: center;
   }
   .create {
+    margin: 24px 0;
+    text-align: center;
+  }
+  .copy {
     margin: 24px 0;
     text-align: center;
   }
