@@ -20,6 +20,7 @@
         <!-- 自動出力用のテキストエリア -->
         <el-input type="textarea" :rows="30" v-model="textarea"></el-input>
       </div>
+      <!-- 自動出力用のテキストエリアの内容を全選択してコピーする -->
       <div class="copy">
         <el-button type="primary">コピーする</el-button>
       </div>
