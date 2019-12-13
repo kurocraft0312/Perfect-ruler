@@ -20,7 +20,7 @@
       </div>
       <!-- 自動出力用のテキストエリアの内容を全選択してコピーする -->
       <div class="copy">
-        <el-button type="primary">コピーする</el-button>
+        <el-button type="primary">コピー</el-button>
       </div>
     </el-main>
     <el-footer>
@@ -44,7 +44,7 @@ export default {
           title: 'Q3.なぜ/何のためにやるのか？'
         },
         {
-          title: 'Q4.Q3をやるとどうなる/どう変わるのか？'
+          title: 'Q4.やるとどうなる/どう変わるのか？'
         },
       ],
       textarea: '',
