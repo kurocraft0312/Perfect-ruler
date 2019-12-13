@@ -14,14 +14,14 @@
         </div>
       </section>
       <div class="create">
-        <input type="button" value="文章を生成">
+        <el-button type="primary">文章を生成</el-button>
       </div>
       <div>
         <!-- 自動出力用のテキストエリア -->
         <el-input type="textarea" :rows="30" v-model="textarea"></el-input>
       </div>
       <div class="copy">
-        <input type="button" value="コピーする">
+        <el-button type="primary">コピーする</el-button>
       </div>
     </el-main>
     <el-footer>
@@ -56,6 +56,7 @@ export default {
 
 <style>
   .toolname {
+    margin: 8px auto;
     text-align: center;
   }
   .q-title {
