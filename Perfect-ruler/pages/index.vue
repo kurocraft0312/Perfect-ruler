@@ -55,6 +55,9 @@ export default {
 </script>
 
 <style>
+  .el-header {
+    background-color: #409EFF;
+  }
   .toolname {
     margin: 8px auto;
     text-align: center;
@@ -70,6 +73,9 @@ export default {
   .copy {
     margin: 24px 0;
     text-align: center;
+  }
+  .el-footer {
+    background-color: #409EFF;
   }
   .copyright {
     text-align: center;
