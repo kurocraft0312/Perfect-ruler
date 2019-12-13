@@ -10,11 +10,11 @@
           <label for="question-content">{{ question.title }}</label>
         </div>
         <div>
-          <el-input type="textarea" :rows="10" v-model="textarea"></el-input>
+          <el-input type="textarea" class="textbox" :rows="10" v-model="textarea"></el-input>
         </div>
       </section>
       <div class="create">
-        <el-button type="primary">文章を生成</el-button>
+        <el-button type="primary" id="sentence-generation">文章を生成</el-button>
       </div>
       <div>
         <!-- 自動出力用のテキストエリア -->
