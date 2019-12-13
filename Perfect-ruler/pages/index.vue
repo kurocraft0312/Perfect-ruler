@@ -57,8 +57,10 @@ export default {
 <style>
   .el-header {
     background-color: #409EFF;
+    height: 100%!important;
   }
   .toolname {
+    color: #ffffff;
     margin: 8px auto;
     text-align: center;
   }
@@ -76,8 +78,12 @@ export default {
   }
   .el-footer {
     background-color: #409EFF;
+    height: 100%!important;
   }
   .copyright {
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 0;
     text-align: center;
   }
 </style>
