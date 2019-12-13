@@ -9,9 +9,7 @@
         <div class="q-title">
           <label for="question-content">{{ question.title }}</label>
         </div>
-        <div>
           <el-input type="textarea" class="textbox" :rows="10" v-model="textarea"></el-input>
-        </div>
       </section>
       <div class="create">
         <el-button type="primary" id="sentence-generation">文章を生成</el-button>
@@ -64,6 +62,10 @@ export default {
     color: #ffffff;
     margin: 8px auto;
     text-align: center;
+  }
+  .el-main {
+    margin: 0 auto;
+    width: 80%;
   }
   .q-title {
     font-weight: bold;
