@@ -59,7 +59,7 @@ import Footer from '~/components/Footer.vue'
 export default {
   components: {
     Header,
-    Main,
+    Main: () => import('~/components/Main.vue'),
     Footer
   },
 }
